@@ -4,12 +4,193 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <title>Youtube clone</title>
 </head>
 
 <body>
-
+    <nav class="menu">
+        <header>
+            <div class="burger_menu"><img src="./assets/icons/burger-menu.svg" alt=""></div>
+            <img src="./assets/logo.png" alt="logo" class="logo">
+        </header>
+        <ul class="base_categories">
+            <li class="active">
+                <img src="./assets/icons/home.svg" alt="" />
+                <p>home</p>
+            </li>
+            <li>
+                <img src="./assets/icons/trends.svg" alt="" />
+                <p>trending</p>
+            </li>
+            <li>
+                <img src="./assets/icons/subscriptions.svg" alt="" />
+                <p>subscriptions</p>
+            </li>
+        </ul>
+        <ul class="categories">
+            <li>
+                <img src="./assets/icons/library.svg" alt="" />
+                <p>library</p>
+            </li>
+            <li>
+                <img src="./assets/icons/history.svg" alt="" />
+                <p>history</p>
+            </li>
+            <li>
+                <img src="./assets/icons/later.svg" alt="" />
+                <p>watch later</p>
+            </li>
+            <li>
+                <img src="./assets/icons/favs.svg" alt="" />
+                <p>favourites</p>
+            </li>
+            <li>
+                <img src="./assets/icons/liked.svg" alt="" />
+                <p>liked videos</p>
+            </li>
+            <li>
+                <img src="./assets/icons/music.svg" alt="" />
+                <p>music</p>
+            </li>
+            <li>
+                <img src="./assets/icons/games.svg" alt="" />
+                <p>games</p>
+            </li>
+            <button name="more"><img src="./assets/icons/showmore.svg" alt="">show more</button>
+        </ul>
+        <div class="subscriptions">
+            <h3>Subscriptions</h3>
+            <ul>
+                <li>
+                    <img src="" alt="" />
+                    <p>Gussie Singleton</p>
+                </li>
+                <li>
+                    <img src="" alt="" />
+                    <p>Nora Francis</p>
+                </li>
+                <li>
+                    <img src="" alt="" />
+                    <p>Belle Briggs</p>
+                </li>
+                <li>
+                    <img src="" alt="" />
+                    <p>Eunice Cortez</p>
+                </li>
+                <li>
+                    <img src="" alt="" />
+                    <p>Emma Hanson</p>
+                </li>
+                <li>
+                    <img src="" alt="" />
+                    <p>Leah Berry</p>
+                </li>
+            </ul>
+        </div>
+        <div class="settings">
+            <img src="" alt="">
+            <p>Settings</p>
+        </div>
+    </nav>
+    <main>
+        <header>
+            <div class="search"><input type="text"><button></button></div>
+            <div class="settings"></div>
+            <div class="account"></div>
+        </header>
+        <section class="main_content">
+            <section class="by_author">
+                <div class="header_info">
+                    <img src="./assets/by_author.png">
+                    <h1>Dollie Blair</h1>
+                </div>
+                <section class="videos">
+                    <div class="video">
+                        <div class="poster">
+                            <img src="./assets/brief.png" alt="preview image">
+                            <p class="video_duration">4:15</p>
+                        </div>
+                        <h3>A Brief History Of Creation</h3>
+                        <div class="info">
+                            <p>80k views · 3 days ago</p>
+                            <p class="author">Dollie Blair</p>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <div class="poster">
+                            <img src="./assets/hotel.png" alt="preview image">
+                            <p class="video_duration">8:00</p>
+                        </div>
+                        <h3>Selecting The Right Hotel</h3>
+                        <div class="info">
+                            <p>123k views · 1 months ago</p>
+                            <p class="author">Dollie Blair</p>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <div class="poster">
+                            <img src="./assets/asteroid.png" alt="preview image">
+                            <p class="video_duration">5:32</p>
+                        </div>
+                        <h3>Asteroids</h3>
+                        <div class="info">
+                            <p>43k views · 12 days ago</p>
+                            <p class="author">Dollie Blair</p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section class="recommends">
+                <div class="header_info">
+                    <h1>recommended</h1>
+                </div>
+                <section class="videos">
+                    <div class="video">
+                        <div class="poster">
+                            <img src="./assets/celebration.png" alt="preview image">
+                            <p class="video_duration">3:40</p>
+                        </div>
+                        <h3>Dude You Re Getting A Telescope</h3>
+                        <div class="info">
+                            <p>34k views · 5 months ago</p>
+                            <p class="author">Gussie French</p>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <div class="poster">
+                            <img src="./assets/man_hat.png" alt="preview image">
+                            <p class="video_duration">2:12</p>
+                        </div>
+                        <h3>Moon Gazing</h3>
+                        <div class="info">
+                            <p>54k views · 11 months ago</p>
+                            <p class="author">Edward Osborne</p>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <div class="poster">
+                            <img src="./assets/woman_rose.png" alt="preview image">
+                            <p class="video_duration">2:12</p>
+                        </div>
+                        <h3>Moon Gazing</h3>
+                        <div class="info">
+                            <p>125k views · 4 months ago</p>
+                            <p class="author">Dollie Blair</p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section class="food_drink">
+                <h1>Food & Drink</h1>
+                <section class="videos"></section>
+            </section>
+        </section>
+    </main>
 </body>
 
 </html>
