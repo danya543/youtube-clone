@@ -240,7 +240,8 @@ main header .settings .notifications p {
   position: relative;
   margin-bottom: 10px;
 }
-.by_author .videos .video .poster {
+.by_author .videos .video .poster,
+.food_drink .videos .video .poster {
   width: 250px;
   height: 150px;
 }

@@ -1,0 +1,78 @@
+.person_videos .videos .video .poster {
+  width: 250px;
+  height: 150px;
+}
+
+.channel_header {
+  width: 1595px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.channel_header .channel_info {
+  width: 300px;
+  display: grid;
+  grid-template-areas:
+    "icon name"
+    "icon stats";
+  gap: 2px 14px;
+}
+.channel_header .channel_info img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  grid-area: icon;
+}
+.channel_header .channel_info h1 {
+  grid-area: name;
+  align-self: end;
+  font-size: 26px;
+  font-weight: 700;
+  color: rgb(25, 32, 44);
+}
+.channel_header .channel_info p {
+  grid-area: stats;
+  font-size: 13px;
+  font-weight: 400;
+  color: rgb(194, 194, 194);
+}
+
+.channel_header .interaction {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+.channel_header .interaction button {
+  width: 154px;
+  height: 40px;
+  font-size: 16px;
+  padding: 10px 20px;
+  background: red;
+  color: white;
+  border-radius: 20px;
+  border: none;
+}
+
+.channel_videos .content .video_tabs {
+  margin-bottom: 54px;
+}
+.channel_videos .content .video_tabs ul {
+  display: flex;
+  flex-direction: row;
+  gap: 69px;
+  list-style: none;
+}
+.channel_videos .content .video_tabs ul li {
+  cursor: pointer;
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 700;
+}
+.channel_videos .content .video_tabs ul li.active {
+  color: red;
+  border-bottom: 2px solid red;
+  padding: 0 4.5px;
+}
