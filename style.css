@@ -294,3 +294,89 @@ main header .settings .notifications p {
   font-size: 13px;
   font-weight: 400;
 }
+
+@media (min-width:400px) {
+  .mobile_logo{display: none;}
+}
+@media (max-width:400px) {
+  main{
+    width: 96%;
+    margin-left: 2%;
+  }
+  main header .search{
+    width: fit-content;
+    margin: 0 5px 0 50px ;
+  }
+  main header .search button{
+    position: static;
+  }
+  .main_content .videos{
+    flex-direction: column;
+    align-items: center;
+  }
+  .main_content .videos .video{
+width: 90%;
+min-width: 200px;
+  }
+  .main_content .videos .video .poster{
+    width: 100%;
+  }
+  .main_content .recommends .videos .video .poster{
+    height: 150px;
+  }
+  .menu{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 5% 11px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: white;
+    z-index: 10;
+    width: 100%;
+    height: 60px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    gap: 0;
+    margin-left: 0;
+    border-top: 1px solid rgb(241, 241, 241);
+  }
+  .menu .base_categories {
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-between;
+    width: 75%;
+  }
+  .menu header,
+  .menu .categories li,
+  .menu .categories button,
+  .menu .subscriptions,
+  .menu .settings,
+  .main_content .chapter_header,
+  main header .search input,
+  main header .profile_settings .settings{
+    display: none;
+  }
+  main header .profile_settings{
+    margin-right: 5px;
+  }
+  .menu .base_categories li,
+  .menu .categories li:first-child{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  .menu .categories li:first-child{
+    gap: 7px;
+  }
+  .menu .base_categories li p,
+  .menu .categories li p{
+    font-size: 10px;
+  }
+  .main_content .food_drink{
+    margin-bottom: 85px;
+  }
+  
+}
