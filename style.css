@@ -109,6 +109,8 @@ main {
   width: 80%;
   display: flex;
   flex-direction: column;
+  padding-right: 20px;
+  margin-bottom: 30px;
 }
 
 main header {
@@ -240,15 +242,24 @@ main header .settings .notifications p {
 }
 
 .videos {
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 40px;
 }
+.videos .video{
+  width: 29%;
+  min-width: 230px;
+}
+.by_author .videos .video,
+.food_drink .videos .video{
+  max-width: 400px;
+}
 .recommends .videos .video {
-  width: 35%;
+  width: 29%;
   max-width: 550px;
-  min-width: 400px;
+  min-width: 370px;
 }
 .videos .video .poster {
   position: relative;
@@ -256,7 +267,7 @@ main header .settings .notifications p {
 }
 .by_author .videos .video .poster,
 .food_drink .videos .video .poster {
-  width: 250px;
+  width: 100%;
   height: 150px;
 }
 .recommends .videos .video .poster {
@@ -302,6 +313,7 @@ main header .settings .notifications p {
   main{
     width: 96%;
     margin-left: 2%;
+    padding-right: 0;
   }
   main header .search{
     width: fit-content;
@@ -358,6 +370,9 @@ min-width: 200px;
   main header .profile_settings .settings{
     display: none;
   }
+  main header{
+    height: 75px;
+  }
   main header .profile_settings{
     margin-right: 5px;
   }
@@ -376,7 +391,7 @@ min-width: 200px;
     font-size: 10px;
   }
   .main_content .food_drink{
-    margin-bottom: 85px;
+    margin-bottom: 50px;
   }
   
 }

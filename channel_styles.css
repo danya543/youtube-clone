@@ -1,9 +1,6 @@
 .person_videos .videos .video .poster {
-  width: 250px;
+  width: 100%;
   height: 150px;
-}
-.person_videos {
-  margin-bottom: 30px;
 }
 
 .channel_preview {
@@ -84,8 +81,10 @@
 .channel_videos .content .video_tabs ul {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: start;
   list-style: none;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 .channel_videos .content .video_tabs ul li {
   cursor: pointer;
@@ -97,6 +96,11 @@
   color: red;
   border-bottom: 2px solid red;
   padding: 0 4.5px;
+}
+.channel_videos .content .video_tabs button{
+  display: none;
+  background: transparent;
+  border: none;
 }
 
 .channel_videos .last_video {
@@ -171,8 +175,15 @@
 }
 @media (max-width:400px) {
   main header .profile_settings .account,
-  .channel .channel_header .interaction img {
+  .channel .channel_header .interaction img,
+  .channel_videos .video_tabs li,
+  .channel_videos .recommendations,
+  .channel_videos .last_video,
+  .person_videos .chapter_header {
     display: none;
+  }
+  main{
+    margin-bottom: 50px;
   }
   main header .mobile_logo{
     display: flex;
@@ -180,13 +191,53 @@
     gap: 10px;
   }
   .channel_content .channel_preview{
-    width: 100%;
+    width: 104%;
+    margin-left: -2%;
     height: 100px;
   }
   .channel_content .channel_preview img{
     border-radius: 0;
   }
   .channel .channel_header {
+    margin-top: -70px;
     flex-direction: column;
+    gap: 20px;
+    align-items: start;
+  }
+  .channel .channel_header .channel_info{
+    grid-template-areas:
+    "icon"
+    "name" 
+    "stats";
+  }
+  .channel_videos .content,
+  .person_videos .videos .video,
+  .person_videos .videos .video .poster {
+    width: 100%;
+  }
+  .person_videos .videos{
+    margin-top: 16px;
+  }
+  .channel_videos .content .video_tabs{
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .channel_videos .content .video_tabs ul{
+    width: 85%;
+  }
+  .channel_videos .content .video_tabs ul li:nth-child(-n+3){
+    display: block;
+  }
+  .channel_videos .content .video_tabs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .channel_videos .content .video_tabs button{
+    display: block;
+  }
+  .person_videos {
+    margin-bottom: 20px;
   }
 }
