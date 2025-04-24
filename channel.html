@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./channel_styles.css">
     <title>Youtube clone</title>
 </head>
 
@@ -100,13 +101,15 @@
     <main>
         <header>
             <div class="mobile_logo">
-                <img src="./assets/logo.png" alt="logo" class="logo">
+                <img src="./assets/icons/min_logo.svg" alt="logo" class="logo">
+                <h3>Margaret Phelps</h3>
             </div>
             <div class="search">
                 <input type="text" placeholder="Search">
                 <button><img src="./assets/icons/search.svg" alt="search"></button>
             </div>
             <div class="profile_settings">
+                <img src="./assets/icons/profile_settings.svg" alt="">
                 <div class="settings">
                     <img src="./assets/icons/video.svg" alt="">
                     <img src="./assets/icons/format.svg" alt="">
@@ -120,152 +123,76 @@
                 </div>
             </div>
         </header>
-        <section class="main_content">
-            <section class="by_author">
-                <div class="chapter_header">
-                    <div class="info">
-                        <img src="./assets/dollie.png">
-                        <h1>Dollie Blair</h1>
+        <section class="channel_content">
+            <div class="channel_preview">
+                <img src="./assets/channel_bg.png" alt="channel preview">
+            </div>
+            <section class="channel">
+                <div class="channel_header">
+                    <div class="channel_info">
+                        <img src="./assets/margaret.png">
+                        <h1>Margaret Phelps</h1>
+                        <p>245K subscribed</p>
                     </div>
-                    <div class="nav_buttons">
-                        <button><img src="./assets/icons/left_arrow.svg" alt="left"></button>
-                        <button><img src="./assets/icons/right_arrow.svg" alt="right"></button>
-                    </div>
-                </div>
-                <section class="videos">
-                    <div class="video">
-                        <div class="poster">
-                            <img src="./assets/brief.png" alt="preview image">
-                            <p class="video_duration">4:15</p>
-                        </div>
-                        <h3>A Brief History Of Creation</h3>
-                        <div class="info">
-                            <p>80k views  ·  3 days ago</p>
-                            <p class="author">Dollie Blair</p>
-                        </div>
-                    </div>
-                    <div class="video">
-                        <div class="poster">
-                            <img src="./assets/hotel.png" alt="preview image">
-                            <p class="video_duration">8:00</p>
-                        </div>
-                        <h3>Selecting The Right Hotel</h3>
-                        <div class="info">
-                            <p>123k views  ·  1 months ago</p>
-                            <p class="author">Dollie Blair</p>
-                        </div>
-                    </div>
-                    <div class="video">
-                        <div class="poster">
-                            <img src="./assets/asteroid.png" alt="preview image">
-                            <p class="video_duration">5:32</p>
-                        </div>
-                        <h3>Asteroids</h3>
-                        <div class="info">
-                            <p>43k views  ·  12 days ago</p>
-                            <p class="author">Dollie Blair</p>
-                        </div>
-                    </div>
-                    <div class="video">
-                        <div class="poster">
-                            <img src="./assets/telescope.png" alt="preview image">
-                            <p class="video_duration">6:40</p>
-                        </div>
-                        <h3>Telescopes 101</h3>
-                        <div class="info">
-                            <p>11k views  ·  6 months ago</p>
-                            <p class="author">Dollie Blair</p>
-                        </div>
-                    </div>
-                    <div class="video">
-                        <div class="poster">
-                            <img src="./assets/medical.png" alt="preview image">
-                            <p class="video_duration">1:45</p>
-                        </div>
-                        <h3>Medical Care Is Just</h3>
-                        <div class="info">
-                            <p>18k views  ·  2 days ago</p>
-                            <p class="author">Dollie Blair</p>
-                        </div>
-                    </div>
-                    <div class="video">
-                        <div class="poster">
-                            <img src="./assets/moon.png" alt="preview image">
-                            <p class="video_duration">2:12</p>
-                        </div>
-                        <h3>Moon gazing</h3>
-                        <div class="info">
-                            <p>67k views  ·  4 months ago</p>
-                            <p class="author">Dollie Blair</p>
-                        </div>
-                    </div>
-                </section>
-            </section>
-            <section class="recommends">
-                <div class="chapter_header">
-                    <div class="info">
-                        <h1>recommended</h1>
-                    </div>
-                    <div class="nav_buttons">
-                        <button><img src="./assets/icons/left_arrow.svg" alt="left"></button>
-                        <button><img src="./assets/icons/right_arrow.svg" alt="right"></button>
-                    </div>
-                </div>
-                <section class="videos">
-                    <div class="video">
-                        <div class="poster">
-                            <img src="./assets/celebration.png" alt="preview image">
-                            <p class="video_duration">3:40</p>
-                        </div>
-                        <h3>Dude You Re Getting A Telescope</h3>
-                        <div class="info">
-                            <p>34k views  ·  5 months ago</p>
-                            <p class="author">Gussie French</p>
-                        </div>
-                    </div>
-                    <div class="video">
-                        <div class="poster">
-                            <img src="./assets/man_hat.png" alt="preview image">
-                            <p class="video_duration">2:12</p>
-                        </div>
-                        <h3>Moon Gazing</h3>
-                        <div class="info">
-                            <p>54k views  ·  11 months ago</p>
-                            <p class="author">Edward Osborne</p>
-                        </div>
-                    </div>
-                    <div class="video">
-                        <div class="poster">
-                            <img src="./assets/woman_rose.png" alt="preview image">
-                            <p class="video_duration">2:12</p>
-                        </div>
-                        <h3>Moon Gazing</h3>
-                        <div class="info">
-                            <p>125k views  ·  4 months ago</p>
-                            <p class="author">Dollie Blair</p>
-                        </div>
-                    </div>
-                </section>
-            </section>
-            <section class="food_drink">
-                <div class="chapter_header">
-                    <div class="info">
-                        <img src="./assets/food&drink.png" alt="">
-                        <h1>Food & Drink</h1>
-                        <p>Recommended channel for you</p>
-                    </div>
-                    <div class="buttons">
+                    <div class="interaction">
+                        <img src="./assets/icons/notification.svg" alt="">
                         <button>Subscribe 2.3m</button>
-                        <div class="nav_buttons">
-                            <button><img src="./assets/icons/left_arrow.svg" alt="left"></button>
-                            <button><img src="./assets/icons/right_arrow.svg" alt="right"></button>
+                    </div>
+                </div>
+                <div class="channel_videos">
+                    <div class="content">
+                        <nav class="video_tabs">
+                            <ul>
+                                <li class="active">home</li>
+                                <li>videos</li>
+                                <li>playlists</li>
+                                <li>channels</li>
+                                <li>discussions</li>
+                                <li>about</li>
+                                <li><img src="./assets/icons/search.svg" alt="search"></li>
+                            </ul>
+                            <button><img src="./assets/icons/more_tabs.svg" alt=""></button>
+                        </nav>
+                        <div class="last_video">
+                            <div class="video_content">
+                                <img src="./assets/last_video.png">
+                                <p class="video_duration">7:36</p>
+                            </div>
+                            <div class="description">
+                                <h3>Choosing The Best Audio Player<br>Software For Your Computer</h3>
+                                <p>Your cheap internet-based banner advertising will become one of the sought for ads
+                                    there are. Today, the world of Internet advertising is rapidly evolving beyond
+                                    banner ads and intrusive pop-ups. Bayles A common medium for advertising on the
+                                    Internet is the use of banner ads.
+                                </p>
+                                <p class="stats">11k views  ·  6 months ago</p>
+                            </div>
                         </div>
+                    </div>
+                    <div class="recommendations">
+                        <p>Recommended channel</p>
+                        <ul class="channels">
+                            <li><img src="./assets/flora.png">Flora Benson</li>
+                            <li><img src="./assets/violet.png">Violet Cobb</li>
+                            <li><img src="./assets/philip.png">Phillip Mullins</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="person_videos">
+                <div class="chapter_header">
+                    <div class="info">
+                        <h1>Margaret Phelps videos</h1>
+                    </div>
+                    <div class="nav_buttons">
+                        <button><img src="./assets/icons/left_arrow.svg" alt="left"></button>
+                        <button><img src="./assets/icons/right_arrow.svg" alt="right"></button>
                     </div>
                 </div>
                 <section class="videos">
                     <div class="video">
                         <div class="poster">
-                            <img src="./assets/Cone.png" alt="preview image">
+                            <img src="./assets/balloons.png" alt="preview image">
                             <p class="video_duration">7:36</p>
                         </div>
                         <h3>Astronomy Or Astrology</h3>
@@ -276,7 +203,7 @@
                     </div>
                     <div class="video">
                         <div class="poster">
-                            <img src="./assets/cherry.png" alt="preview image">
+                            <img src="./assets/flashlight.png" alt="preview image">
                             <p class="video_duration">2:19</p>
                         </div>
                         <h3>Advertising Outdoors</h3>
@@ -287,7 +214,7 @@
                     </div>
                     <div class="video">
                         <div class="poster">
-                            <img src="./assets/pasta.png" alt="preview image">
+                            <img src="./assets/egg.png" alt="preview image">
                             <p class="video_duration">9:05</p>
                         </div>
                         <h3>Radio Astronomy</h3>
@@ -298,7 +225,7 @@
                     </div>
                     <div class="video">
                         <div class="poster">
-                            <img src="./assets/orange.png" alt="preview image">
+                            <img src="./assets/watermelon.png" alt="preview image">
                             <p class="video_duration">3:40</p>
                         </div>
                         <h3>A Good Autoresponder</h3>
@@ -309,7 +236,7 @@
                     </div>
                     <div class="video">
                         <div class="poster">
-                            <img src="./assets/donuts.png" alt="preview image">
+                            <img src="./assets/pineapple.png" alt="preview image">
                             <p class="video_duration">1:56</p>
                         </div>
                         <h3>Baby Monitor Technology</h3>
@@ -320,7 +247,7 @@
                     </div>
                     <div class="video">
                         <div class="poster">
-                            <img src="./assets/watermelon.png" alt="preview image">
+                            <img src="./assets/sausages.png" alt="preview image">
                             <p class="video_duration">4:15</p>
                         </div>
                         <h3>Asteroids</h3>
